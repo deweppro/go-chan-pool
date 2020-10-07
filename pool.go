@@ -27,18 +27,15 @@ func (p *ChanPool) new() {
 //Get get object from pool
 func (p *ChanPool) Get() interface{} {
 	p.new()
-
 	select {
 	case x := <-p.c:
 		return x
-
 	default:
 		if p.New != nil {
 			return p.New()
 		}
 		return p.empty
 	}
-
 }
 
 //Put put object to pool
@@ -47,7 +44,6 @@ func (p *ChanPool) Put(x interface{}) {
 		select {
 		case p.c <- x:
 		default:
-
 		}
 	}
 }
