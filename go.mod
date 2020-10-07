@@ -1,1 +1,3 @@
-module github.com/deweppro/chan-pool
+module github.com/deweppro/go-chan-pool
+
+go 1.14
