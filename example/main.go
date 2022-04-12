@@ -13,12 +13,15 @@ type Object struct {
 }
 
 func main() {
-	cpool := &pool.ChanPool{
+	v := &pool.ChanPool{
 		Size: 1,
 		New: func() interface{} {
 			return &Object{}
 		},
 	}
-	a := cpool.Get().(*Object)
-	cpool.Put(a)
+	a, ok := v.Get().(*Object)
+	if !ok {
+		panic("invalid type")
+	}
+	v.Put(a)
 }
