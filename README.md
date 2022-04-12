@@ -1,6 +1,6 @@
 # Pool on Chan
 
-[![Coverage Status](https://coveralls.io/repos/github/deweppro/go-chan-pool/badge.svg?branch=codecov)](https://coveralls.io/github/deweppro/go-chan-pool?branch=codecov)
+[![Coverage Status](https://coveralls.io/repos/github/deweppro/go-chan-pool/badge.svg?branch=master)](https://coveralls.io/github/deweppro/go-chan-pool?branch=master)
 [![Release](https://img.shields.io/github/release/deweppro/go-chan-pool.svg?style=flat-square)](https://github.com/deweppro/go-chan-pool/releases/latest)
 [![Go Report Card](https://goreportcard.com/badge/github.com/deweppro/go-chan-pool)](https://goreportcard.com/report/github.com/deweppro/go-chan-pool)
 [![Build Status](https://travis-ci.com/deweppro/go-chan-pool.svg?branch=master)](https://travis-ci.com/deweppro/go-chan-pool)
